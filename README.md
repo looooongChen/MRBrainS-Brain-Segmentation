@@ -2,6 +2,19 @@
 
 MixNet: Multi-modality Mix Network for Brain Segmentation
 
+@inproceedings{LongMACCAIBrainLes,  
+&nbsp;&nbsp; author = {Long Chen, Dorit Merhof},  
+&nbsp;&nbsp; title = {MixNet: Multi-modality Mix Network for Brain Segmentation},  
+&nbsp;&nbsp; booktitle = {MICCAI Brainlesion Workshop (BrainLes)},  
+&nbsp;&nbsp; year = {2018},  
+}  
+
+## links:
+[MICCAI BrainLes Workshop](http://www.brainlesion-workshop.org/)  
+[MICCAI MRBrainS2018 Challenge](http://mrbrains18.isi.uu.nl/)  
+[MICCAI MRBrainS2013 Challenge](http://mrbrains13.isi.uu.nl/)  
+[Institute of Imaging & Computer Vision, RWTH Aachen University](https://www.lfb.rwth-aachen.de/en/)  
+
 # Prerequisites 
 
 ## Python dependencies:
@@ -95,20 +108,6 @@ Similar to the prediction code, ```train.py``` has three python dictionaries to 
 ## Quantitative results on MICCAI MRBrianS2018 Dataset
 <img src="./doc/quantitative.png" width="800px">
 
-# Cite the work
-
-@inproceedings{LongMACCAIBrainLes,  
-  author    = {Long Chen, Dorit Merhof},  
-  title     = {MixNet: Multi-modality Mix Network for Brain Segmentation},  
-  booktitle = {MICCAI Brainlesion Workshop (BrainLes)},  
-  year      = {2018},  
-}  
-
-## links:
-[MICCAI BrainLes Workshop](http://www.brainlesion-workshop.org/)  
-[MICCAI MRBrainS2018 Challenge](http://mrbrains18.isi.uu.nl/)  
-[MICCAI MRBrainS2013 Challenge](http://mrbrains13.isi.uu.nl/)  
-[Institute of Imaging & Computer Vision, RWTH Aachen University](https://www.lfb.rwth-aachen.de/en/)  
 
 
 

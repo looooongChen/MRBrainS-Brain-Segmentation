@@ -57,9 +57,9 @@ For the MICCAI [MRBrainS2018](http://mrbrains18.isi.uu.nl/) dataset:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ orig  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ (FLAIR.nii.gz, IR.nii.gz, reg_3DT1_to_FLAIR.txt, reg_IR.nii.gz, reg_T1.nii.gz, T1.nii.gz, T1_mask.nii.gz)   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 4   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... ...  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... ...    
 
-
+If the data is not organised as above, you should change the dictionary ```dataset_config``` in ```train.py``` and ```predict.py``` correspondingly.
 
 
 ## Download pretrainde model
@@ -74,8 +74,6 @@ Unzip the pretrained models in the model folder, like:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ model.ckpt-257945.data-00000-of-00001  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ model.ckpt-257945.index  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ model.ckpt-257945.meta  
-
-If the data is not organised as above, you should change the dictionary ```dataset_config``` in ```train.py``` and ```predict.py``` correspondingly.
 
 
 # Test pre-trainded model

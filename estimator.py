@@ -91,7 +91,8 @@ def train(net_config, training_config, train_ds, eval_ds):
     print("=========== val data ==========")
     print(eval_ds[1].shape)
     print("=========== training steps ==========")
-    print(len(train_ds[0])*training_config['epoch']/training_config['batch_size'])
+    max_steps = len(train_ds[0])*training_config['epoch']/training_config['batch_size']
+    print(max_steps)
 
     def model_fn(features, labels, mode, params):
         return model_fn_base(features, labels, mode, params, net_config, training_config)
@@ -108,6 +109,7 @@ def train(net_config, training_config, train_ds, eval_ds):
                                         model_dir=training_config['model_dir'])
 
     train_spec = tf.estimator.TrainSpec(input_fn=train_input_fn,
+                                        max_steps=max_steps,
                                         hooks=[train_iterator_initializer_hook])
     eval_spec = tf.estimator.EvalSpec(input_fn=eval_input_fn,
                                       hooks=[eval_iterator_initializer_hook])

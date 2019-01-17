@@ -15,7 +15,9 @@
 
 The model is trained with MICCAI [MRBrainS2013](http://mrbrains13.isi.uu.nl/)/[MRBrainS2018](http://mrbrains18.isi.uu.nl/) dataset. To train a model from scratch, you may also use these two datasets.  
 
-If you want to run the predict.py and train.py directly, you should download the dataset and orgnized in the following structure:
+If you want to run the code directly, you should organise the dataset structure as following:
+
+For the MICCAI [MRBrainS2013](http://mrbrains13.isi.uu.nl/) dataset:  
 
 ├─ root  
 &nbsp;&nbsp;&nbsp;&nbsp;└─ MRBrainS2013  
@@ -23,12 +25,12 @@ If you want to run the predict.py and train.py directly, you should download the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 1  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ (LabelsForTesting.nii, LabelsForTraining.nii, T1.nii, T1_1mm.nii, T1_IR.nii, T2_FLAIR.nii)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 2  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ ...  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... ...  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ testData  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 1   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ (T1.nii, T1_1mm.nii, T1_IR.nii, T2_FLAIR.nii)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 2  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... ...  
 
 For the MICCAI [MRBrainS2018](http://mrbrains18.isi.uu.nl/) dataset:  
 
@@ -42,7 +44,7 @@ For the MICCAI [MRBrainS2018](http://mrbrains18.isi.uu.nl/) dataset:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ orig  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ (FLAIR.nii.gz, IR.nii.gz, reg_3DT1_to_FLAIR.txt, reg_IR.nii.gz, reg_T1.nii.gz, T1.nii.gz, T1_mask.nii.gz)   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ 4   
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ ...  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;... ...  
 
 
 
@@ -60,10 +62,21 @@ Download the pretrained model [here](http://www.google.com) and put it under the
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ model.ckpt-257945.index  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└─ model.ckpt-257945.meta  
 
+If the data is not organised as above, you should change the dictionary ```dataset_config``` in ```train.py``` and ```predict.py``` correspondingly.
 
 
-# Test pretrainde model
+# Test pre-trainded model
 
 If you have orgnised the model and dataset as above, you should be able to run:
 
 ``` python predict.py ```
+
+# Train your own model
+
+To train your own model, run:
+``` python train.py```
+
+In ```train.py```, three python dictionaries are used to control the training:
+- net_config: change network structure 
+- training_config: training configurations
+- dataset_config: data locations, input modalities

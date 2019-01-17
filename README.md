@@ -85,3 +85,12 @@ Similar to the prediction code, ```train.py``` has three python dictionaries to 
 - net_config: network parameters
 - training_config: training configurations
 - dataset_config: data locations, input modalities
+
+# Results
+
+## Quanlitative resluts
+
+<img src="./doc/qualitative.png" width="1000px">
+
+## Quantitative results on miccai MRBrianS2018 Dataset
+<img src="./doc/quantitative.png" width="1000px">

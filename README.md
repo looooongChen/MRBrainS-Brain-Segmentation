@@ -64,7 +64,7 @@ For the MICCAI [MRBrainS2018](http://mrbrains18.isi.uu.nl/) dataset:
 
 ## Download pretrainde model
 
-Download the pretrained model [here](http://www.google.com) and put it under the model folder, like:
+Unzip the pretrained models in the model folder, like:
 
 ├─ root    
 &nbsp;&nbsp;&nbsp;&nbsp;└─ models  

@@ -277,15 +277,15 @@ def replace_label(data, ori, des):
 
 
 def merge_label(data):
-    replace_label(data, 2, 1)
-    replace_label(data, 3, 2)
-    replace_label(data, 4, 2)
-    replace_label(data, 5, 3)
-    replace_label(data, 6, 3)
-    replace_label(data, 7, 0)
-    replace_label(data, 8, 0)
-    replace_label(data, 9, 0)
-    replace_label(data, 10, 0)
+    # replace_label(data, 2, 1)
+    # replace_label(data, 3, 2)
+    # replace_label(data, 4, 2)
+    # replace_label(data, 5, 3)
+    # replace_label(data, 6, 3)
+    # replace_label(data, 7, 0)
+    # replace_label(data, 8, 0)
+    # replace_label(data, 9, 0)
+    # replace_label(data, 10, 0)
 
     return data
 

@@ -67,16 +67,21 @@ If the data is not organised as above, you should change the dictionary ```datas
 
 # Test pre-trainded model
 
-If you have orgnised the model and dataset as above, you should be able to run:
+If you have organised the model and dataset as above, you should be able to run directly:
 
 ``` python predict.py ```
+
+In ```predict.py```, three python dictionaries are used to config the run:
+- net_config: network parameters
+- running_config: model location, batch_size
+- dataset_config: data locations, input modalities
 
 # Train your own model
 
 To train your own model, run:
 ``` python train.py```
 
-In ```train.py```, three python dictionaries are used to control the training:
-- net_config: change network structure 
+Similar to the prediction code, ```train.py``` has three python dictionaries to control the network structure and training:
+- net_config: network parameters
 - training_config: training configurations
 - dataset_config: data locations, input modalities

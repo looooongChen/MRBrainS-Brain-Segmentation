@@ -34,8 +34,9 @@ training_config = {
     'momentum': 0.99
 }
 
+# MRBrainS2013 dataset config
 dataset_config = {
-    'data_dir': './2013/trainingData',
+    'data_dir': './MRBrainS2013/trainingData',
     'channels': {
         'flair': 'T2_FLAIR.nii',
         'ir': 'T1_IR.nii',
@@ -46,8 +47,9 @@ dataset_config = {
     'output_channels': ['seg']
 }
 
+# MRBrainS2018 dataset config
 # dataset_config = {
-#     'data_dir': './2013/trainingData',
+#     'data_dir': './MRBrainS2018/trainingData',
 #     'channels': {
 #         'flair': 'pre/FLAIR.nii.gz',
 #         'ir': 'pre/reg_IR.nii.gz',
@@ -61,8 +63,10 @@ dataset_config = {
 # create dataset
 dataset = Dataset(dataset_config)
 dataset.read_subjects()
-
+# subjects of MRBrainS2013
 train_subjects = ['1', '2', '3', '4', '5']
+# subjects of MRBrainS2018
+# train_subjects = ['1', '4', '5', '7', '14', '70', '148']
 val_subjects = ['1']
 train_np = dataset.generate_ds(train_subjects, True)
 val_np = dataset.generate_ds(val_subjects, False)

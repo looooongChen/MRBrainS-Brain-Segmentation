@@ -41,6 +41,8 @@ dataset_config = {
     'input_channels': ['t1', 'flair', 'ir']
 }
 
+# MRBrainS2018 does not release test dataset
+
 # create dataset
 dataset = Dataset(dataset_config)
 dataset.read_subjects()

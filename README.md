@@ -90,7 +90,26 @@ Similar to the prediction code, ```train.py``` has three python dictionaries to 
 
 ## Quanlitative resluts
 
-<img src="./doc/qualitative.png" width="1000px">
+<img src="./doc/qualitative.png" width="800">
 
-## Quantitative results on miccai MRBrianS2018 Dataset
-<img src="./doc/quantitative.png" width="1000px">
+## Quantitative results on MICCAI MRBrianS2018 Dataset
+<img src="./doc/quantitative.png" width="800px">
+
+# Cite the work
+
+@inproceedings{LongMACCAIBrainLes,
+  author    = {Long Chen, Dorit Merhof},
+  title     = {MixNet: Multi-modality Mix Network for Brain Segmentation},
+  booktitle = {MICCAI Brainlesion Workshop (BrainLes)},
+  year      = {2018},
+}
+
+## links:
+[MICCAI BrainLes Workshop](http://www.brainlesion-workshop.org/)
+[MICCAI MRBrainS2018 Challenge](http://mrbrains18.isi.uu.nl/)
+[MICCAI MRBrainS2013 Challenge](http://mrbrains13.isi.uu.nl/)
+[Institute of Imaging & Computer Vision, RWTH Aachen University](https://www.lfb.rwth-aachen.de/en/)
+
+
+
+

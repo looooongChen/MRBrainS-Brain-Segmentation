@@ -1,6 +1,6 @@
 # MRBrainS2018-Brain-Segmentation
 
-
+MixNet: Multi-modality Mix Network for Brain Segmentation
 
 # Prerequisites 
 
@@ -97,18 +97,18 @@ Similar to the prediction code, ```train.py``` has three python dictionaries to 
 
 # Cite the work
 
-@inproceedings{LongMACCAIBrainLes,
-  author    = {Long Chen, Dorit Merhof},
-  title     = {MixNet: Multi-modality Mix Network for Brain Segmentation},
-  booktitle = {MICCAI Brainlesion Workshop (BrainLes)},
-  year      = {2018},
-}
+@inproceedings{LongMACCAIBrainLes,  
+  author    = {Long Chen, Dorit Merhof},  
+  title     = {MixNet: Multi-modality Mix Network for Brain Segmentation},  
+  booktitle = {MICCAI Brainlesion Workshop (BrainLes)},  
+  year      = {2018},  
+}  
 
 ## links:
-[MICCAI BrainLes Workshop](http://www.brainlesion-workshop.org/)
-[MICCAI MRBrainS2018 Challenge](http://mrbrains18.isi.uu.nl/)
-[MICCAI MRBrainS2013 Challenge](http://mrbrains13.isi.uu.nl/)
-[Institute of Imaging & Computer Vision, RWTH Aachen University](https://www.lfb.rwth-aachen.de/en/)
+[MICCAI BrainLes Workshop](http://www.brainlesion-workshop.org/)  
+[MICCAI MRBrainS2018 Challenge](http://mrbrains18.isi.uu.nl/)  
+[MICCAI MRBrainS2013 Challenge](http://mrbrains13.isi.uu.nl/)  
+[Institute of Imaging & Computer Vision, RWTH Aachen University](https://www.lfb.rwth-aachen.de/en/)  
 
 
 
